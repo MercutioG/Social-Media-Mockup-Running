@@ -3,3 +3,15 @@
 @use './base';
 @use './layout/app';
 @use './components/list';
+
+@import './partials/nav';
+
+.main-section{
+  color: white;
+  display: flex;
+}
+
+body {
+  display: flex;
+  
+}

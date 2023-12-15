@@ -1,6 +1,6 @@
-const CreatePost = () =>{
+const CreatePost = () => {
   return (
-    <div>Create Post</div> 
+    <div>Create Post</div>
   )
 }
 

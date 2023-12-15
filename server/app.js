@@ -12,7 +12,9 @@ mongoose.connect(process.env.MONGO_URI);
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    credentials: true, origin: 'http://localhost:3000'
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -21,7 +23,7 @@ app.use(express.urlencoded({ extended: false, limit: 100000, parameterLimit: 20}
 app.use(session({secret: process.env.SECRET_KEY, resave: false, saveUninitialized: true,}));
 
 app.route('/').get((req, res) =>{
-    res.send("Welcome");
+    res.send("Backend is working");
 });
 app.route('/docs').get((req, res) =>{
     // Import your mongoose model
@@ -36,4 +38,4 @@ app.route('/docs').get((req, res) =>{
     // var doc = Model.findOneAndUpdate({id: id}, {$set: {name: name}}, {new: true});
 });
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 5000, console.log(`Server listening on port ${process.env.PORT || 5000}`));

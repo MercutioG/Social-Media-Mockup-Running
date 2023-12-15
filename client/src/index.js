@@ -3,36 +3,33 @@ import ReactDOM from 'react-dom/client';
 
 import './Styles/css/main.css';
 
-import App from './App';
-import Edit from './Components/Edit';
-
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Error from './Pages/Error';
 
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home/>
+    element: <Home />
   },
   {
     path: '/login',
-    element: <Login/>
+    element: <Login />
   },
   {
     path: '/register',
-    element: <Register/>
+    element: <Register />
   },
   {
     path: '*',
-    element: <Error/>
+    element: <Error />
   }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router={router}/>
+  <RouterProvider router={router} />
 )

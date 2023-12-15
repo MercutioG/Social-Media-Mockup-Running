@@ -12,7 +12,8 @@ export default function Edit(){
         const update = {...form}
         const getData = await fetch("http://localhost:5000/docs", {
             method: "GET",
-            headers: { "Content-Type": "application/json" }
+            headers: { "Content-Type": "application/json" },
+            credentials: "include"
         })
         //const postData = await fetch("http://localhost:5000/docs", {
         //    method: "POST",

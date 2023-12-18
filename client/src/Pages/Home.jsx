@@ -6,6 +6,7 @@ import { FaBell } from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
 import { IoLogOut } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
+import template from "../images/temp.jpg"
 const Home = () => {
 	return (
 		<>
@@ -74,49 +75,49 @@ const Home = () => {
     </div>
     <div className="post-container">
       <div className="card">
-        <img src="./banana boat.jpg" alt="Your Image" />
+        <img src={template} alt="Your Image" />
         <div className="card-content">
           <h2>Your Card Title</h2>
           <p>Your card text goes here. Customize this text as needed.</p>
         </div>
       </div>
       <div className="card">
-        <img src="./banana boat.jpg" alt="Your Image" />
+        <img src={template} alt="Your Image" />
         <div className="card-content">
           <h2>Your Card Title</h2>
           <p>Your card text goes here. Customize this text as needed.</p>
         </div>
       </div>
       <div className="card">
-        <img src="./banana boat.jpg" alt="Your Image" />
+        <img src={template} alt="Your Image" />
         <div className="card-content">
           <h2>Your Card Title</h2>
           <p>Your card text goes here. Customize this text as needed.</p>
         </div>
       </div>
       <div className="card">
-        <img src="./banana boat.jpg" alt="Your Image" />
+        <img src={template} alt="Your Image" />
         <div className="card-content">
           <h2>Your Card Title</h2>
           <p>Your card text goes here. Customize this text as needed.</p>
         </div>
       </div>
       <div className="card">
-        <img src="./banana boat.jpg" alt="Your Image" />
+        <img src={template} alt="Your Image" />
         <div className="card-content">
           <h2>Your Card Title</h2>
           <p>Your card text goes here. Customize this text as needed.</p>
         </div>
       </div>
       <div className="card">
-        <img src="./banana boat.jpg" alt="Your Image" />
+        <img src={template} alt="Your Image" />
         <div className="card-content">
           <h2>Your Card Title</h2>
           <p>Your card text goes here. Customize this text as needed.</p>
         </div>
       </div>
       <div className="card">
-        <img src="./banana boat.jpg" alt="Your Image" />
+        <img src={template} alt="Your Image" />
         <div className="card-content">
           <h2>Your Card Title</h2>
           <p>Your card text goes here. Customize this text as needed.</p>

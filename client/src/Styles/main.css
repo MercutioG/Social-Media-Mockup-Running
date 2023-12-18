@@ -382,7 +382,7 @@ body.dark .home .text {
 }
 
 .card {
-
+    /* border-radius: 0.5rem; */
     overflow: hidden;
     max-width: 17%;
     margin: 1rem 1rem 1rem 1rem;
@@ -390,8 +390,9 @@ body.dark .home .text {
 
 .card img {
     border-radius: 0.5rem;
-    width: 100%;
-    height: auto;
+    background-position: center;
+    width: 15rem;
+    height: 15rem;
 }
 
 .card-content {

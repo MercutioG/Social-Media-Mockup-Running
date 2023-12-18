@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import './Styles/css/main.css';
+import './Styles/main.css';
 
 import Home from './Pages/Home';
 import Login from './Pages/Login';

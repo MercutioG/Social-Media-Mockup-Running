@@ -40,9 +40,6 @@ router.post("/register", (req, res) => {
 						// Save user
 						newUser
 							.save() // This is a mongoose function to save to our mongodb
-							.then((value) => {
-								res.redirect("/login");
-							})
 							.catch((value) => console.log(`Something went wrong after saving: ${value}`));
 					});
 				});
@@ -52,6 +49,8 @@ router.post("/register", (req, res) => {
 });
 
 // Login
+router.get('/login', (req, res, next) => {})
+
 router.post("/login", (req, res, next) => {
 	passport.authenticate("local", {
 		successRedirect: "/",

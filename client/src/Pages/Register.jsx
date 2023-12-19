@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [form, setForm] = useState({ username: '', email: '', password: ''})
+  const navigate = useNavigate();
 
   const handleSubmit = async(e) => {
     console.log('Submit success?')
@@ -18,6 +20,8 @@ const Register = () => {
       console.log('Data saved successfully')
       setForm({username: '', email: '', password: ''})
     }
+    navigate('/')
+
   }
   return (
     <form id="register-form" method="post" action="/users/register">
